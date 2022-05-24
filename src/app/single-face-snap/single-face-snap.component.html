@@ -1,8 +1,4 @@
-<div class="face-snap-card" [ngClass]="{ snapped: buttonText === 'Oops UnSnap' }">
-  <!-- <span>{{ 0.477 | percent }}</span>
-  <p>Nombre:  {{  4346234.36 | number:'8.0-1' }}</p>
-  <p>Pourcentage: {{  0.336 | percent:'1.2-2' }}</p>
-  <p>Epargne: {{ 798000 | currency:'XAF' :'code' }}</p> -->
+<div class="face-snap-card" *ngIf="faceSnap$ | async as faceSnap" [ngClass]="{ snapped: buttonText === 'Oops, unSnap!' }">
   <h2>{{ faceSnap.title | uppercase}}</h2>
   <a routerLink="/facesnaps">Retour</a>
   <p>{{ faceSnap.description }}</p>
