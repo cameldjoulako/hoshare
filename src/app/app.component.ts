@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { interval, of } from 'rxjs';
-import { concatMap, mergeMap, delay, exhaustMap, map, switchMap, take, tap } from 'rxjs/operators';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +7,5 @@ import { concatMap, mergeMap, delay, exhaustMap, map, switchMap, take, tap } fro
 })
 export class AppComponent implements OnInit {
 
-  ngOnInit() {
-
-  }
+  ngOnInit() {}
 }
